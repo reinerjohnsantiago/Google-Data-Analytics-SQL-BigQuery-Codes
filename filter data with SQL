@@ -1,0 +1,25 @@
+Step-by-Step: Filter data with SQL
+
+Example 1: Filter data in SQL
+Complete the following steps to use the WHERE clause to filter the database and narrow down the list to movies in the comedy genre.
+
+1. In the BigQuery Explorer pane, select the movie dataset then the movies table. 
+
+2. Select the Preview tab from the Details pane.
+
+3. Select Query then In new tab and enter the following code into the query editor:
+######################################## UNDERSTAND THIS PART BELOW ############################################################################
+SELECT *
+FROM `projectID.movie_data.movies`
+
+Note: If you’re completing this code in BigQuery, replace projectID in the code block to your own projectID.
+
+4. Use the WHERE clause to filter the data. Enter WHERE Genre = 'Comedy'; to filter for and select rows with 'Comedy' in the Genre column.
+
+5. Your code should now match this code block:
+######################################## UNDERSTAND THIS PART BELOW ############################################################################
+SELECT *
+FROM `projectID.movie_data.movies`
+WHERE Genre = 'Comedy';
+
+6. Select RUN to run the query. The results display a shorter list of movies, all in the comedy genre.
